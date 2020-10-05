@@ -224,6 +224,11 @@ img {
     text-align: center;
 }
 
+#email a {
+    text-decoration: none;
+    color: #000;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -234,7 +239,7 @@ img {
     list-style: none;
     width: 35px;
     height: 35px;
-    line-height: 35px;
+    line-height: 32px;
     margin: 0 10px;
     text-align: center;
     cursor: pointer;
@@ -349,21 +354,25 @@ img {
 }
 
 .bottom_logo img {
-    width: 100px;
+    width: 150px;
 }
 
 .bottom_logo p {
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .copyright {
     margin-top: 40px;
-    margin-bottom: -80px;
+    margin-bottom: -50px;
     font-weight: 800;
     font-size: 12px;
+}
+
+.contact {
+    max-height: 100vh !important;
 }
 
 /*Responsive*/
@@ -492,4 +501,5 @@ img {
     .w50 h4 {
         text-align: center;
     }
+    
 }
