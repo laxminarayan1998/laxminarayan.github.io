@@ -219,7 +219,7 @@ img {
 #email {
     margin-top: 50px;
     font-style: bold;
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
 }
@@ -232,9 +232,9 @@ img {
 
 .wrapper ul li {
     list-style: none;
-    width: 55px;
-    height: 55px;
-    line-height: 65px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     margin: 0 10px;
     text-align: center;
     cursor: pointer;
@@ -345,13 +345,18 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 100px;
+    align-items: center;
+}
+
+.bottom_logo img {
+    width: 100px;
 }
 
 .bottom_logo p {
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .copyright {
@@ -382,13 +387,11 @@ img {
         z-index: 999;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
-
     .menu.active {
         left: 0;
     }
-
     header ul li a {
-        color: #111; 
+        color: #111;
         margin: 10px;
         font-size: 24px;
     }
@@ -408,7 +411,6 @@ img {
         background-size: 25px;
         cursor: pointer;
     }
-
     header.sticky .toggle {
         filter: invert(1);
     }
@@ -451,5 +453,35 @@ img {
     .banner h3 {
         font-size: 1em;
         /* font-size: 20px; */
+    }
+}
+
+@media (max-width: 425px) {
+    header, header.sticky {
+        padding: 20px 30px;
+    }
+    body {
+        display: inline-block !important;
+    }
+    .banner {
+        padding: 35px;
+    }
+    .textBx h2 {
+        font-size: 22px !important;
+        font-weight: 200;
+    }
+    .laxminarayan {
+        font-size: 28px !important;
+    }
+    .textBx h3 {
+        font-size: 12px !important;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .w50 h4 {
+        text-align: center;
     }
 }
