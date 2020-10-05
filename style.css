@@ -133,6 +133,7 @@ header.sticky ul li a {
 } */
 
 .contentBx h4 {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
