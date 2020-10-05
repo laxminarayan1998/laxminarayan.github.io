@@ -9,7 +9,7 @@
 }
 
 section {
-    padding: 200px;
+    padding: 160px;
 }
 
 .banner {
@@ -137,9 +137,9 @@ header.sticky ul li a {
     justify-content: center;
 }
 
-.contentBx {
+/* .contentBx {
     padding-right: 30px;
-}
+} */
 
 .contentBx h3 {
     font-size: 24px;
@@ -465,13 +465,22 @@ img {
     }
     .banner {
         padding: 35px;
+        position: relative;
+        min-height: 100vh;
+        min-width: 70vh;
+        background-image: url(images/banner.png);
+        background-size: cover;
+        background-position: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .textBx h2 {
-        font-size: 22px !important;
+        font-size: 1.3em !important;
         font-weight: 200;
     }
     .laxminarayan {
-        font-size: 28px !important;
+        font-size: 1.2em !important;
     }
     .textBx h3 {
         font-size: 12px !important;
