@@ -20,7 +20,7 @@ const ProjectsGrid = () => {
 • Developed the front-end using Flutter, focusing on UI/UX to improve the learning experience.`,
       tags: ["Flutter", "Video Calls", "UI/UX", "Booking System"],
       playStore: "https://play.google.com/store/apps/details?id=com.instrucko",
-      appStore: "https://apps.apple.com/in/app/instrucko/id1234567890",
+      appStore: "https://apps.apple.com/in/app/instrucko/id1632440837/",
       featured: true,
     },
     {
@@ -30,8 +30,8 @@ const ProjectsGrid = () => {
 • Collaborated with the backend team to integrate 50+ APIs to ensure seamless data flow.`,
       tags: ["Flutter", "API Integration", "Dynamic Content"],
       playStore:
-        "https://play.google.com/store/apps/details?id=com.cordelia.cruises",
-      appStore: "https://apps.apple.com/in/app/cordelia-cruises/id1234567890",
+        "https://play.google.com/store/apps/details?id=com.cordeliacruises.userapp",
+      appStore: "https://apps.apple.com/in/app/cordelia-cruises/id1589910857",
     },
     {
       title: "Fanzly",
@@ -39,8 +39,6 @@ const ProjectsGrid = () => {
 • Implemented chat functionality and payment gateway for exclusive content.
 • Developed a custom UI for live streaming and post interactions to replicate the experience of the original platform.`,
       tags: ["Flutter", "Live Streaming", "Payment Integration"],
-      playStore: "https://play.google.com/store/apps/details?id=com.fanzly",
-      appStore: "https://apps.apple.com/in/app/fanzly/id1234567890",
     },
     {
       title: "Guess Who (Web)",
@@ -48,7 +46,7 @@ const ProjectsGrid = () => {
 • Created an interactive and engaging interface with a time-based challenge system.
 • Designed and implemented the logic to display dynamic questions based on the users' friends' images.`,
       tags: ["Flutter Web", "Interactive Gaming", "UI Design"],
-      webLink: "https://guesswho.example.com",
+      webLink: "https://oecgame-4c5b7.web.app/",
       playStore: null,
       appStore: null,
     },
@@ -104,7 +102,7 @@ const ProjectsGrid = () => {
                   </h3>
 
                   <div className="text-gray-400 mb-6 leading-relaxed space-y-2">
-                    {project.description.split('\n').map((point, index) => (
+                    {project.description.split("\n").map((point, index) => (
                       <p key={index}>{point}</p>
                     ))}
                   </div>
@@ -121,7 +119,9 @@ const ProjectsGrid = () => {
                   </div>
 
                   {/* Store Links */}
-                  {(project.playStore || project.appStore || project.webLink) && (
+                  {(project.playStore ||
+                    project.appStore ||
+                    project.webLink) && (
                     <div className="flex flex-wrap gap-4 pt-6 border-t border-[#4ade80]/20">
                       {project.playStore && (
                         <a

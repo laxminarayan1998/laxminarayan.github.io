@@ -27,13 +27,8 @@ const ContactSection = () => {
     },
     {
       icon: Instagram,
-      link: "https://www.instagram.com/laxminarayan_1998",
+      link: "https://www.instagram.com/nryn_das",
       label: "Instagram",
-    },
-    {
-      icon: Facebook,
-      link: "https://www.facebook.com/laxminarayan1998",
-      label: "Facebook",
     },
   ];
 
@@ -71,11 +66,10 @@ const ContactSection = () => {
             <span className="text-[#4ade80] font-medium mb-4 inline-block">
               Let's Connect
             </span>
-            <h2 className="text-4xl font-bold mb-6 text-white">
-              Get in Touch
-            </h2>
+            <h2 className="text-4xl font-bold mb-6 text-white">Get in Touch</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Have a project in mind or just want to say hi? Feel free to reach out!
+              Have a project in mind or just want to say hi? Feel free to reach
+              out!
             </p>
           </div>
 
@@ -124,7 +118,10 @@ const ContactSection = () => {
                 <h3 className="font-semibold text-white">Phone</h3>
               </div>
               <p className="text-gray-400 group-hover:text-[#4ade80] transition-colors">
-                {phoneNumber.replace(/(\+\d{2})(\d{3})(\d{3})(\d{4})/, "$1 $2-$3-$4")}
+                {phoneNumber.replace(
+                  /(\+\d{2})(\d{3})(\d{3})(\d{4})/,
+                  "$1 $2-$3-$4"
+                )}
               </p>
             </a>
 
