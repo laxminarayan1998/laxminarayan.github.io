@@ -14,6 +14,7 @@ import AnimatedHero from "./AnimatedHero";
 import Navigation from "./Navigation";
 import ProjectGrid from "./ProjectGrid";
 import ContactSection from "./ContactSection";
+import WorkExperience from "./WorkExpirience";
 
 const ModernPortfolio = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -84,6 +85,9 @@ const ModernPortfolio = () => {
 
       {/* Hero Section */}
       <AnimatedHero />
+
+      {/* Work Experience */}
+      <WorkExperience />
 
       {/* Technical Section */}
       <TechnicalSection />
