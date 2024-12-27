@@ -1,5 +1,8 @@
 import React from "react";
 
+import playstore_icon from "/playstore-svgrepo-com.svg";
+import appstore_icon from "/icons8-app-store.svg";
+
 const ProjectsGrid = () => {
   const projects = [
     {
@@ -131,7 +134,7 @@ const ProjectsGrid = () => {
                           className="flex items-center gap-2 px-4 py-2 bg-[#4ade80]/10 hover:bg-[#4ade80]/20 rounded-lg text-sm text-white transition-colors"
                         >
                           <img
-                            src="/assets/playstore-svgrepo-com.svg"
+                            src={playstore_icon}
                             alt="Play Store"
                             className="w-5 h-5"
                           />
@@ -147,7 +150,7 @@ const ProjectsGrid = () => {
                           className="flex items-center gap-2 px-4 py-2 bg-[#4ade80]/10 hover:bg-[#4ade80]/20 rounded-lg text-sm text-white transition-colors"
                         >
                           <img
-                            src="/assets/icons8-app-store.svg"
+                            src={appstore_icon}
                             alt="App Store"
                             className="w-5 h-5"
                           />

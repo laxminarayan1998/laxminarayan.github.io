@@ -1,12 +1,15 @@
-import React from 'react';
-import { Calendar, MapPin } from 'lucide-react';
+import React from "react";
+import { Calendar, MapPin } from "lucide-react";
+
+import appscrip_icon from "/appscrip_icon.png";
+import motorola_icon from "/msi_icon.jpg";
 
 const WorkExperience = () => {
   const experiences = [
     {
       title: "Software Engineer",
       company: "Motorola Solutions",
-      imgSrc: "/assets/msi_icon.jpg",
+      imgSrc: motorola_icon,
       location: "Bangalore, India",
       period: "May 2023 – Present",
       highlights: [
@@ -14,13 +17,13 @@ const WorkExperience = () => {
         "Migrating the app's frontend from ExtJS to Flutter using BLoC state management, ensuring clean and maintainable architecture.",
         "Focused on minimizing reliance on third-party libraries by creating custom libraries to retain full control over app functionality.",
         "Implemented video calling features, including embedding native views seamlessly within the Flutter app.",
-        "Utilized Method Channels to enable efficient communication between Flutter and native platforms."
-      ]
+        "Utilized Method Channels to enable efficient communication between Flutter and native platforms.",
+      ],
     },
     {
       title: "Flutter Developer",
       company: "Appscrip",
-      imgSrc: "/assets/appscrip_icon.png",
+      imgSrc: appscrip_icon,
       location: "Bangalore, India",
       period: "July 2021 – May 2023",
       highlights: [
@@ -28,13 +31,16 @@ const WorkExperience = () => {
         "Delivered a social media platform (OnlyFans Clone) with features like user feeds, exclusive content, and live streaming.",
         "Built the Cordelia Cruises App in just 5 days, managing 75+ screens and 50+ APIs.",
         "Worked on the Instrucko App and Vief, integrating video calls, real-time chat, and complex UI components.",
-        "Focused on clean code, reusable components, and high-performance implementations."
-      ]
-    }
+        "Focused on clean code, reusable components, and high-performance implementations.",
+      ],
+    },
   ];
 
   return (
-    <section id="experience" className="min-h-screen relative overflow-hidden bg-[#0a0f0d]">
+    <section
+      id="experience"
+      className="min-h-screen relative overflow-hidden bg-[#0a0f0d]"
+    >
       {/* Background gradient */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#4ade80]/5 via-transparent to-transparent" />
@@ -53,7 +59,9 @@ const WorkExperience = () => {
       <div className="relative py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-white">Work Experience</h2>
+            <h2 className="text-4xl font-bold mb-4 text-white">
+              Work Experience
+            </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Professional journey and key achievements in software development
             </p>
@@ -81,12 +89,12 @@ const WorkExperience = () => {
                       {exp.title}
                     </h3>
                     <p className="text-xl text-gray-300 mt-2">{exp.company}</p>
-                    
+
                     <div className="flex items-center gap-2 mt-4 text-gray-400">
                       <Calendar className="w-4 h-4" />
                       <span className="text-sm">{exp.period}</span>
                     </div>
-                    
+
                     <div className="flex items-center gap-2 mt-2 text-gray-400">
                       <MapPin className="w-4 h-4" />
                       <span className="text-sm">{exp.location}</span>
@@ -99,7 +107,9 @@ const WorkExperience = () => {
                       {exp.highlights.map((highlight, i) => (
                         <li key={i} className="flex items-start gap-3">
                           <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#4ade80] flex-shrink-0" />
-                          <p className="text-gray-300 leading-relaxed">{highlight}</p>
+                          <p className="text-gray-300 leading-relaxed">
+                            {highlight}
+                          </p>
                         </li>
                       ))}
                     </ul>
