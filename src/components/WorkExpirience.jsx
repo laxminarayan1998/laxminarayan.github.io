@@ -13,8 +13,8 @@ const WorkExperience = () => {
       location: "Bangalore, India",
       period: "May 2023 – Present",
       highlights: [
-        "Developing the PTT (Push-To-Talk) App, with core functionality implemented natively in Android (Java) and iOS (Objective-C).",
-        "Migrating the app's frontend from ExtJS to Flutter using BLoC state management, ensuring clean and maintainable architecture.",
+        "Working with core functionality implemented natively in Android and iOS.",
+        "Migrating the app's frontend to Flutter using BLoC state management, ensuring clean and maintainable architecture.",
         "Focused on minimizing reliance on third-party libraries by creating custom libraries to retain full control over app functionality.",
         "Implemented video calling features, including embedding native views seamlessly within the Flutter app.",
         "Utilized Method Channels to enable efficient communication between Flutter and native platforms.",

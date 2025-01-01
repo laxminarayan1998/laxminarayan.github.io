@@ -33,7 +33,7 @@ const ModernPortfolio = () => {
     {
       title: "PTT on Wave (Motorola)",
       description:
-        "Core functionality implemented natively in Android (Java) and iOS (Objective-C), with frontend migration from ExtJS to Flutter using BLoC state management.",
+        "Core functionality implemented natively in Android and iOS, with frontend migration to Flutter using BLoC state management.",
       tags: ["Flutter", "Android", "iOS", "BLoC", "Method Channels"],
     },
     {
@@ -99,7 +99,7 @@ const ModernPortfolio = () => {
       <ContactSection />
 
       <footer className="py-8 text-center text-gray-500 border-t border-[#4ade80]/10">
-        <p>© 2025 Laxminarayan Das.</p>
+        <p>© 2025 NRYN.</p>
       </footer>
     </div>
   );
