@@ -8,6 +8,7 @@ import {
   Download,
   ArrowRight,
 } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 import TechnicalSection from "./TechnicalSection";
 import AnimatedHero from "./AnimatedHero";
@@ -98,8 +99,18 @@ const ModernPortfolio = () => {
       {/* Contact Section */}
       <ContactSection />
 
+      {/* Footer */}
       <footer className="py-8 text-center text-gray-500 border-t border-[#4ade80]/10">
-        <p>© 2025 NRYN.</p>
+        <div className="flex items-center justify-center gap-4">
+          <p>© 2025 NRYN.</p>
+          <span>•</span>
+          <Link
+            to="/privacy-policy"
+            className="text-gray-500 hover:text-[#4ade80] transition-colors duration-300"
+          >
+            Privacy Policy
+          </Link>
+        </div>
       </footer>
     </div>
   );

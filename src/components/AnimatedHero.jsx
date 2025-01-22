@@ -11,7 +11,7 @@ const AnimatedHero = () => {
 
   const downloadResume = () => {
     const resumeUrl =
-      "https://drive.google.com/file/d/1x7X74StMPeKuFyY8Cakzw5c3Wzg2gSel/view?usp=sharing";
+      "https://drive.google.com/file/d/12k751qMq8yj_1d2f-fbf-HPWLxp7hUD9/view?usp=sharing";
     window.open(resumeUrl, "_blank");
   };
 
